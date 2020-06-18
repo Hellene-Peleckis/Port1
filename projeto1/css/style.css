@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../image/ceu.jpg);
+}
+
+
+/*Box Marketing*/
+
+.container {
+    margin-right: 35px;
+}
+
+.container .card {
+    margin-left: 35px;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #FFD118;
+    overflow: hidden;
+}
+
+.container .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0887D0;
+    clip-path: circle(150px at 80% 20%);
+}
+
+.container .card .imgbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transform: 0.5s;
+}
+
+.container .card .imgbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-left: 100px;
+    transform: translate(-60%, -60%);
+    width: 270px;
+}
+
+.imgboxtexto img {
+    margin: 270px auto;
+    padding-left: 30px;
+    width: 270px;
+}
+
+
+/*Box Produto*/
+
+.container2 {
+    position: relative;
+}
+
+.container2 .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background-color: #FFD118;
+    overflow: hidden;
+}
+
+.container2 .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0887D0;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container2 .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container2 .card:after {
+    content: 'Vans';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.container2 .card .imgbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transform: 0.5s;
+}
+
+.container2 .card:hover .imgbox {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container2 .card .imgbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%) rotate(25deg);
+    width: 270px;
+}
+
+.container2 .card .conteudobx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container2 .card:hover .conteudobx {
+    height: 210px;
+}
+
+.container2 .card .conteudobx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #B34F0C;
+}
+
+.container2 .card .conteudobx .tamanho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container2 .card:hover .conteudobx .tamanho {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container2 .card .conteudobx .tamanho h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container2 .card .conteudobx .tamanho span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container2 .card .conteudobx .tamanho span:hover {
+    background: #B34F0C;
+    color: #fff;
+}
+
+.container2 .card .conteudobx .cor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container2 .card:hover .conteudobx .cor {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container2 .card .conteudobx .cor h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container2 .card .conteudobx .cor span {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container2 .card .conteudobx .cor span:nth-child(1) {
+    background-color: #fff;
+}
+
+.container2 .card .conteudobx .cor span:nth-child(2) {
+    background-color: #0887D0;
+}
+
+.container2 .card .conteudobx .cor span:nth-child(3) {
+    background-color: #111;
+}
+
+.container2 .card .conteudobx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #B34F0C;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .conteudobx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #000;
+    background: #FFD118;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
